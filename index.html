@@ -151,6 +151,12 @@ title: {{ site.name }}
         <td title="{{ bank[1].Report.Olie-gas.Remarks }}" data="{{ bank[1].Report.Olie-gas.Grade }}">{{ bank[1].Report.Olie-gas.Grade }}</td>
         {% endfor %}
     </tr>
+      <tr>
+        <td>Gemiddelde</td>
+        {% for bank in data_set %}
+        <td title="{{ bank[1].Report.Gemiddelde.Remarks }}" data="{{ bank[1].Report.Gemiddelde.Grade }}">{{ bank[1].Report.Gemiddelde.Grade }}</td>
+        {% endfor %}
+    </tr>
 </table>
 <small>Cijfers anders dan die voor bunq zijn afkomstig van <a href="https://eerlijkegeldwijzer.nl/bankwijzer/">eerlijkegeldwijzer.nl</a>.</small>
 
